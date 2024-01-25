@@ -1,0 +1,31 @@
+{
+   "departments": [
+     {
+       "name": "fou",
+       "prometheus": "url1",
+       "grafana": "url2",
+       "alertmanager": "url3"
+     },
+     {
+       "name": "geo",
+       "prometheus": "url1",
+       "grafana": "url2",
+       "alertmanager": "url3"
+     }
+   ],
+   "teams": [
+     {
+       "name": "geo-frontend",
+       "prometheus": "url1",
+       "grafana": "url2",
+       "alertmanager": "url3"
+     },
+     {
+       "name": "geo-backend",
+       "prometheus": "url1",
+       "grafana": "url2",
+       "alertmanager": "url3"
+     }
+   ]
+ }
+ 

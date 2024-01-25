@@ -1,0 +1,8 @@
+<h2>TEST</h2>
+{{ range $.Site.Data.monitoring.departments }}
+  <h2>{{ .name }}</h2>
+  <p>{{ .prometheus }}</p>
+  <p>{{ .grafana }}</p>
+  <p>{{ .alertmanager }}</p>
+{{ end }}
+<p>This range didn't render</p>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    {{ printf "%#v" $.Site.Data }}
+    Something else
+    
+    But there is no content here. 
+    {{ .Content }}
+    <h2>This is the index partial for departments</h2>
+    {{ partial "departments.html" . }}
+    <h2>This is the index partial for teams</h2>
+    {{ partial "teams.html" . }}
+    {{ range $.Site.Data.jazz.bass }}
+        {{ partial "artists.html" . }}
+    {{ end }}
+    <h2>This is the index partial for footer</h2>
+    {{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!-- layouts/partials/teams.html -->
+<h2>This is Teams from partials</h2>
+{{ range $.Site.Data.monitoring.teams }}
+  <h2>{{ .name }}</h2>
+  <p>{{ .prometheus }}</p>
+  <p>{{ .grafana }}</p>
+  <p>{{ .alertmanager }}</p>
+{{ end }}
+<p>But this page didn't render, did it</p>
