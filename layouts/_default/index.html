@@ -7,15 +7,21 @@
     <title>{{ .Title }}</title>
 </head>
 <body>
+    <h1>Data fetched from .Site.Data</h1>
     {{ printf "%#v" $.Site.Data }}
-    Something else
     
+    <h1>Content from .Content</h1>
     But there is no content here. 
-    {{ .Content }}
+    {{ $.Content }}
+
+    <h1>Content from partials </h1>
     <h2>This is the index partial for departments</h2>
     {{ partial "departments.html" . }}
+
     <h2>This is the index partial for teams</h2>
     {{ partial "teams.html" . }}
+
+    <h2>This is the Jazz example</h2>
     {{ range $.Site.Data.jazz.bass }}
         {{ partial "artists.html" . }}
     {{ end }}
